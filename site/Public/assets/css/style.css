@@ -1,0 +1,182 @@
+/* ----------- Form  ------------ */
+.dataTables_wrapper .btn{
+    padding-left: 10px;
+}
+
+.max-char-text {
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    font-size: smaller;
+    color: #ccc;
+}
+
+/* ----------- CHAT ------------ */
+.chat-view .message{
+    margin-bottom: 0px !important;
+}
+.chat-view .chat-bubble{
+    margin: 1px !important;
+}
+.chat-height-500{
+    height: 500px;
+}
+.chat-view  .chat-inner{
+    overflow-y: auto;
+}
+
+/* ----------- Explorer Page ------------ */
+.advanced-filters{
+    background-color: #FFF;
+    padding: 10px;
+    margin: -25px -25px auto;
+}
+.serach-form{
+    float: left;
+    height: 30px;
+    width: 800px;
+    height: 60px;
+    display: table-cell;
+}
+.b-rad-25{
+    border-radius: 25px !important;
+}
+
+/*----------- New user wizard ---------*/
+
+.interests-check{
+    outline: 3px solid orange;
+}
+
+.interests-label{
+    padding-top:60px !important;
+    padding-left: auto;
+    padding-right: auto;
+    height: 150px;
+    width: 150px;
+    display: block;
+    font-weight: bold !important;
+    color: white !important;
+    font-size: 14px !important;
+    background-color: #eee ;
+    float: left;
+    overflow: hidden;
+    text-shadow: 0 0 2px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
+    -moz-text-shadow: 0 0 2px #000 !important;
+    -webkit-text-shadow: 0 0 2px #000 !important;
+}
+
+/* -----------  ------------ */
+.cards_container{
+    width: 100%;
+}
+
+.header_background{
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 180px;
+}
+
+.opacity_frame {
+    background-color: rgba(0, 0, 0, 0.37);
+    min-height: 180px;
+}
+
+.header_content {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header_content h2
+{
+    color: #fff;
+    padding-top: 20px
+}
+.header_content
+{
+    color: #fff;
+}
+
+.cards_row{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card_fixed_height{
+    background: #fff;
+    height: 250px;
+    width: 280px;
+    padding: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid rgba(0,0,0,0.07);
+}
+
+.card_fixed_height_tall{
+    height: 336px;
+    width: 280px;
+    padding: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid rgba(0,0,0,0.07);
+}
+
+.purple {
+    background: #6D5CAE;
+}
+
+.black {
+    background: #3B4752;
+}
+
+.green {
+    background: #0DAD9E;
+}
+
+.darkblue {
+    background: #2B6A94;
+}
+
+.card_transparent{
+    width: 280px;
+    margin: auto;
+    padding: 25px;
+}
+
+.col3 {
+    float:left;
+    margin-right: 30px;
+}
+
+.cards_row a {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.card {
+    margin-left: 10px;
+
+}
+.scroll-box-150 {
+    height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+
+}
+.fixed-height {
+    height: 90px;
+    overflow-y: hidden;
+}
+.btn-facebook {
+    color: white;
+    background-color: #4267b2;
+    border-color: #4267b2;
+}
+.unique-line {
+    white-space: nowrap;
+    overflow: hidden;
+}
