@@ -1,7 +1,10 @@
 <?php
 
-// include of the Configuration for the tests
-include './tests/TestsConfigs.php';
+if (isset($_SERVER['PWD'])) {
+    // include of the Configuration for the tests only if the $_SERVER['PWD'] is set,
+    // because it means that it is runing on the comand line (PHPUnit)
+    include './tests/TestsConfigs.php';
+}
 
 // 
 /**
