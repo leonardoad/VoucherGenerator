@@ -1,0 +1,703 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Voucher Manager",
+		"_postman_id": "a4d1acde-dcd7-6b49-a67d-6a45a4df067e",
+		"description": "This is a colection of requests to the HTTP endpoint to redeem vouchers and to see the list of valid vouchers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Redeeming Voucher",
+			"request": {
+				"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/1a363715b0edaa3c76fa8082d59178eb",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "it receives a Voucher Code and Email\r\nand validates the Voucher Code. In Case it is valid, return the Percentage Discount\r\nand set the date of usage\r\n"
+			},
+			"response": [
+				{
+					"id": "a722a94a-b0ea-477a-8051-a89ce072ad40",
+					"name": "Redeeming Voucher",
+					"originalRequest": {
+						"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/1a363715b0edaa3c76fa8082d59178eb",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "109",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 15 Dec 2017 15:40:16 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.4",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.4",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 105,
+					"body": "{\"error\":false,\"errorMessage\":\"\",\"offer\":\"Offer #1\",\"discount\":\"50\",\"expirationDate\":\"12\\/30\\/2017 00:00:00\"}"
+				}
+			]
+		},
+		{
+			"name": "Redeeming Expired Voucher",
+			"request": {
+				"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/1a363715b0edaa3c76fa8082d59178eb",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "it receives a Voucher Code and Email\r\nand validates the Voucher Code. In Case it is valid, return the Percentage Discount\r\nand set the date of usage\r\n"
+			},
+			"response": [
+				{
+					"id": "a6f55012-ebb7-4906-9d4f-0084939bad1e",
+					"name": "Redeeming Voucher",
+					"originalRequest": {
+						"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/1a363715b0edaa3c76fa8082d59178eb",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "109",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 15 Dec 2017 15:40:16 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.4",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.4",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 105,
+					"body": "{\"error\":false,\"errorMessage\":\"\",\"offer\":\"Offer #1\",\"discount\":\"50\",\"expirationDate\":\"12\\/30\\/2017 00:00:00\"}"
+				},
+				{
+					"id": "2fd26420-5d61-4f7c-ae5c-8416bca62ee6",
+					"name": "Redeeming Expired Voucher",
+					"originalRequest": {
+						"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/20d4c530b6ec7d93261dfca2a1aa0bf3",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "133",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 15 Dec 2017 15:54:53 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.4",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.4",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 98,
+					"body": "{\"error\":true,\"errorMessage\":\"Sorry, but this voucher is expired and can't be used enymore\",\"expirationDate\":\"12\\/09\\/2017 00:00:00\"}"
+				}
+			]
+		},
+		{
+			"name": "Getting Valid Vouchers",
+			"request": {
+				"url": "http://localhost/voucher/site/web/vouchers/email/leonardo.danieli@gmail.com",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Provide an endpoint, reachable via HTTP, which receives an Email and returns the valid vouchers"
+			},
+			"response": [
+				{
+					"id": "31c00a49-b4a5-4926-8d95-e404b8eb6ea4",
+					"name": "Redeeming Voucher",
+					"originalRequest": {
+						"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/1a363715b0edaa3c76fa8082d59178eb",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "109",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 15 Dec 2017 15:40:16 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.4",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.4",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 105,
+					"body": "{\"error\":false,\"errorMessage\":\"\",\"offer\":\"Offer #1\",\"discount\":\"50\",\"expirationDate\":\"12\\/30\\/2017 00:00:00\"}"
+				},
+				{
+					"id": "47a2c301-5161-4204-b9eb-1f7b743c926a",
+					"name": "Getting Valid Vouchers",
+					"originalRequest": {
+						"url": "http://localhost/voucher/site/web/vouchers/email/leonardo.danieli@gmail.com",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "202",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 15 Dec 2017 16:01:01 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.4",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.4",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 108,
+					"body": "{\"error\":false,\"errorMessage\":\"\",\"vouchers\":[{\"offer\":\"Offer #1\",\"discount\":\"50\",\"expirationDate\":\"12\\/30\\/2017 00:00:00\"},{\"offer\":\"Offer #2\",\"discount\":\"10\",\"expirationDate\":\"01\\/02\\/2018 00:00:00\"}]}"
+				}
+			]
+		},
+		{
+			"name": "Redeeming Invalid Voucher",
+			"request": {
+				"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/f132f134f34f34f43",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "it receives a Voucher Code and Email\r\nand validates the Voucher Code. In Case it is valid, return the Percentage Discount\r\nand set the date of usage\r\n"
+			},
+			"response": [
+				{
+					"id": "20a78df3-d575-4bec-9f05-cc7dde623982",
+					"name": "Redeeming Invalid Voucher",
+					"originalRequest": {
+						"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/f132f134f34f34f43",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "61",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 15 Dec 2017 15:41:18 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.4",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.4",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 83,
+					"body": "{\"error\":true,\"errorMessage\":\"Invalid Voucher Code or Email\"}"
+				}
+			]
+		},
+		{
+			"name": "Redeeming Used Voucher",
+			"request": {
+				"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/52858681c03659f7bcd016ba790cf678",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "it receives a Voucher Code and Email\r\nand validates the Voucher Code. In Case it is valid, return the Percentage Discount\r\nand set the date of usage\r\n"
+			},
+			"response": [
+				{
+					"id": "c1f9a723-9619-42ee-af1b-abde1b98f2ab",
+					"name": "Redeeming Invalid Voucher",
+					"originalRequest": {
+						"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/f132f134f34f34f43",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "61",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 15 Dec 2017 15:41:18 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.4",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.4",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 83,
+					"body": "{\"error\":true,\"errorMessage\":\"Invalid Voucher Code or Email\"}"
+				},
+				{
+					"id": "d5d4790a-259b-4a5d-bd9e-12e5e14eecf8",
+					"name": "Redeeming Used Voucher",
+					"originalRequest": {
+						"url": "http://localhost/voucher/site/web/redeem/email/leonardo.danieli@gmail.com/code/52858681c03659f7bcd016ba790cf678",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-store, no-cache, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "106",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 15 Dec 2017 15:48:58 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.4",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.0.4",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 113,
+					"body": "{\"error\":true,\"errorMessage\":\"Sorry, but this voucher was already used\",\"used_at\":\"12\\/15\\/2017 13:17:28\"}"
+				}
+			]
+		}
+	]
+}
