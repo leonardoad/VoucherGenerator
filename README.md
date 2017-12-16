@@ -72,3 +72,10 @@ vendor/bin/phpunit --bootstrap ./site/Application/Models/Voucher.php ./tests/Vou
 ## Voucher List Screen
 ![List](https://github.com/leonardoad/VoucherManager/blob/master/res/img/vouchers_list.PNG?raw=true)
  
+## Testing API
+
+### Postman
+
+All the API requests are on a Postman Collection:
+
+[Postman](https://documenter.getpostman.com/view/3374636/voucher-manager/7LhjkWi) - Postman API Documentation 
