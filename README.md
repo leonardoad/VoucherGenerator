@@ -4,7 +4,7 @@ A voucher manager to create discount codes for offers
 
 ## Getting Started
 
-This web app was built using Zend Framework, Smarty, JQuery, Twitter-bootstrap and much passion on our work!
+This web app was built using Zend Framework, Smarty, JQuery, Twitter-bootstrap and much passion for our work!
 
 ### Installing
 
@@ -32,7 +32,7 @@ db.config.password = 'mypassword'
 db.config.dbname = voucher
 ```
 
-To login as site master admin use:
+To log in as site master admin use:
 user: admin
 password: menuap
 
@@ -44,7 +44,7 @@ password: menuap
 
 ### Composer
 
-With the **composer** installed, run the comand:
+With the **composer** installed, run the command:
 ```
 composer install
 ```
@@ -56,7 +56,11 @@ Open the comand line prompt on the project's root folder and execute the comand:
 ```
 vendor/bin/phpunit --bootstrap ./site/Application/Models/Voucher.php ./tests/VoucherTest 
 ```
-  
+### Testing API with Postman
+
+All the API requests are on a Postman Collection:
+
+[Postman](https://documenter.getpostman.com/view/3374636/voucher-manager/7LhjkWi) - Postman API Documentation   
 ## Built With
 
 * [Zend Framework](https://framework.zend.com/) - The web framework used
@@ -72,10 +76,4 @@ vendor/bin/phpunit --bootstrap ./site/Application/Models/Voucher.php ./tests/Vou
 ## Voucher List Screen
 ![List](https://github.com/leonardoad/VoucherManager/blob/master/res/img/vouchers_list.PNG?raw=true)
  
-## Testing API
 
-### Postman
-
-All the API requests are on a Postman Collection:
-
-[Postman](https://documenter.getpostman.com/view/3374636/voucher-manager/7LhjkWi) - Postman API Documentation 
